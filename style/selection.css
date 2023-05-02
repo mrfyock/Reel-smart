@@ -1,0 +1,259 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: Palatino Linotype;
+    background-color:#44596f;
+    color: whitesmoke;
+}
+
+.action{
+    text-align: center;
+ }
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px;
+    gap: 50px;
+    margin: 0 auto;
+    width: 80%;  
+    height: auto;
+    justify-content: center;
+}
+
+.cardImage {
+    height: 350px;
+    width: 300px;
+    border: rgb(255, 255, 255) 4px solid;
+    border-radius: 16px;
+}
+.cardTitle{
+    display: flex;
+    justify-content: center;
+    width: 285px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+h3{
+    text-align: center;
+    padding-top: 25px;
+    font-size: 25px;    
+}
+
+main{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.menu-button{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* padding: 10px; */
+    margin-top: 25px;
+}
+.menu-button button{
+    background-color: #6da0d3;
+    color: whitesmoke;
+    border: none;
+    margin: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.menu-container{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.menu-item{
+    height: 35px;
+    width: 200px;
+    border-radius: 50px;
+    background-color: rgb(0, 81, 187);
+}
+nav{
+    margin: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 25px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav li {
+    margin: 0 10px;
+}
+  
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+#searchBar{
+    margin-top: 8px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 50px;
+    font-size: larger;
+    border-radius: 36px;
+}
+.titles{
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+/*details page*/
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 50px;
+    margin: 25px 50px;
+    border: black 4px solid;
+}
+
+.description-container{
+    display: flex;
+    flex-direction: column;
+    width: 60%;    
+}
+.description{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    height: 100%;
+}
+.description .genre {
+    font-size: 24px;   
+    padding: 5px;
+    margin: 0;  
+}
+.description .synopsis{
+    font-size: 36px;
+    margin-top: 50px;
+}
+.details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+.details p{
+    margin: 30px;
+    font-size: 24px;
+}
+.genre {
+    font-size: 14px;
+    font-weight: bold;
+}
+.poster {
+    height: auto;
+    max-height: 800px;
+    width: 100%; 
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 25px;
+    border: whitesmoke 2px solid;
+}
+.rating{
+    border-radius: 180px;
+    padding: 8px;
+}
+.title{
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title h1{
+    font-size: 36px;
+    margin: 0;
+}
+.title p{
+    font-size: 24px;
+    margin: 0;
+}
+
+/*smaller devices*/
+@media (max-width: 768px) {  
+    .container{
+        border: none;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .description-container{
+        width: 100%;
+    }
+    .description{
+        width: 100%;
+    }
+    .description .genre{
+        font-size: 16px;
+        padding: 0;
+    }
+    .description .synopsis{
+        margin-top: 0;
+        font-size: 16px;
+    }
+    .details{
+        padding: 0;
+        flex-direction: row;
+    }
+    .details p{
+        margin: 2px;
+        font-size: 16px;
+    }
+    .nav-links a{
+        font-size: 12px;
+    }
+    .image-container{
+        align-self: center;
+    }
+    .poster{
+        width: 100%;
+        height: 350px;
+    }
+    .title h1{
+        font-size: 24px;
+    }
+    .title p{
+        font-size: 16px;
+    }    
+    .titles{
+        font-size: 12px;
+    }    
+}

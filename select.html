@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reel Smart</title>
+    <link rel="stylesheet" href="style/selection.css"/>
+</head>
+<body>
+    <header>
+        <div class="titles">
+            <h1>Reel Smart</h1>
+            <h2>Entertainment Explored</h2> 
+        </div>
+        <nav>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </nav>
+         
+    </header>
+    <main>  
+        <form>
+            <input type="text" placeholder="Search by keyword or Title" id="searchBar">
+                      
+        </form>
+        <div class="menu-container">
+            
+            <div class="menu-button">
+                <button id="upcomingMovieBtn" class="menu-item">Upcoming Movies</button>
+                <button id="nowPlayingBtn" class="menu-item">In a Theater Near You</button>
+                <button id="topMovieBtn" class="menu-item">Top Rated Movies</button>                  
+                <button id="topTvBtn" class="menu-item">Top Rated TV Shows</button>
+                <button id="trendBtn" class="menu-item">What's Trending?</button>
+            </div>
+        </div>            
+    </main>
+    <h3 id="h3"></h3>
+    <div class="card-container"></div> 
+      
+   
+    <script src="scripts/script.js"></script>
+    <script type="module" src="scripts/nottheapikey.js"></script>
+</body>
+</html>
